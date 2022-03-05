@@ -1,0 +1,22 @@
+{
+  "name": "serato-twit-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "cheerio": "^1.0.0-rc.10",
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15",
+    "twit": "^2.2.11"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}

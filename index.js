@@ -15,7 +15,7 @@ const T = new Twit({
 })
 
 const seratoPlaylistScrape = async () => {
-  const url = 'https://serato.com/playlists/DJ_Marcus_McBride/live'
+  const url = `https://serato.com/playlists/${process.env.SERATO_DISPLAY_NAME}/live`
   try {
     const { data } = await axios.get(url)
     const $ = cheerio.load(data)
@@ -59,3 +59,5 @@ tweetIt()
 setInterval(() => {
   tweetIt()
 }, 30000)
+
+// add method for script to autorespond to track queries tweeted to the twitter account?
